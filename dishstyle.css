@@ -1283,7 +1283,7 @@ svg polygon {
 }
 .c-mv-slide img {
  width:100%;
- max-height:calc(100vh - 35.6vw);
+ max-height:calc(70vh - 35.6vw);
  -o-object-fit:cover;
  object-fit:cover;
  font-family:'object-fit: cover;'
@@ -6046,8 +6046,8 @@ svg polygon {
   transform:translateY(15px)
  }
  .c-mv-slide img {
-  max-height:calc(100vh - 183px);
-  min-height:598px
+  max-height:calc(70vh - 183px);
+  min-height:500px
  }
  .c-mv-pagination .swiper-pagination-bullet {
   width:18px;
