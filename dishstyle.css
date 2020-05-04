@@ -1696,7 +1696,7 @@ svg polygon {
  padding:2.4vw 0
 }
 .c-card-name {
- font-size:4vw;
+ font-size:1.2vw;
  line-height:1.6;
  color:#000
 }
@@ -4447,7 +4447,7 @@ svg polygon {
   padding:.41667vw .625vw .625vw
  }
  .c-card-name {
-  font-size:1.45833vw;
+  font-size:1.2vw;
   -webkit-transition:.2s cubic-bezier(.39,.575,.565,1);
   transition:.2s cubic-bezier(.39,.575,.565,1)
  }
