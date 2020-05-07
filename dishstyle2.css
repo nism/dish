@@ -56,7 +56,7 @@
 }
 .swiper-container-autoheight,
 .swiper-container-autoheight .swiper-slide {
- height:auto
+ height:calc(50vw-)
 }
 .swiper-container-autoheight .swiper-wrapper {
  align-items:flex-start;
@@ -520,7 +520,7 @@ hr {
  display:block
 }
 body {
- line-height:1
+ width:80%;
 }
 ol,
 ul {
@@ -1657,7 +1657,7 @@ svg polygon {
  font-family:'object-fit:contain;'
 }
 .c-card-thumbnail {
- height:37.33333vw;
+ height:20vw;
  -o-object-fit:cover;
  object-fit:cover;
  font-family:'object-fit: cover;'
@@ -3369,6 +3369,9 @@ svg polygon {
  line-height:1.6;
  color:#000
 }
+.blog_title .blog_publish {
+  display:none;
+}
 .p-blog .main #about.blogListMain .blog_inner .blog_publish {
  -webkit-box-ordinal-group:4;
  -webkit-order:3;
@@ -3404,8 +3407,8 @@ svg polygon {
  color:#232121
 }
 .p-blog .main #about.blogDetail .blog_title a {
- display:inline;
- color:#000
+ display:none;
+ color:#000;
 }
 .p-blog .main #about.blogDetail .blog_publish {
  margin-top:3.6vw;
@@ -3420,9 +3423,6 @@ svg polygon {
 }
 .p-blog .main #about.blogDetail .blog_body .text:empty {
  margin:0
-}
-.p-blog .main #about.blogDetail .blog_body>* {
- margin-bottom:2em
 }
 .p-blog .main #about.blogDetail .blog_body img {
  max-height:60vh;
@@ -4193,9 +4193,9 @@ svg polygon {
   transition:.2s cubic-bezier(.39,.575,.565,1)
  }
  .c-mv-slide img {
-  max-height:100%;
-  height:48.17708vw;
-  min-height:41.52778vw
+  max-height:60vh;
+  height:46vw;
+  min-height:23vw
  }
  .c-mv-pagination {
   margin-top:2.08333vw;
@@ -4410,7 +4410,7 @@ svg polygon {
   height:5.20833vw
  }
  .c-card-thumbnail {
-  height:19.44444vw;
+  height:15vw;
   -webkit-transition:-webkit-transform .6s cubic-bezier(.39,.575,.565,1);
   transition:-webkit-transform .6s cubic-bezier(.39,.575,.565,1);
   transition:transform .6s cubic-bezier(.39,.575,.565,1);
@@ -4447,7 +4447,7 @@ svg polygon {
   padding:.41667vw .625vw .625vw
  }
  .c-card-name {
-  font-size:1.1vw;
+  font-size:2.4vw;
   -webkit-transition:.2s cubic-bezier(.39,.575,.565,1);
   transition:.2s cubic-bezier(.39,.575,.565,1)
  }
@@ -5547,6 +5547,10 @@ svg polygon {
  }
 }
 @media screen and (min-width:980px) {
+ body {
+  width:80%;
+  margin:0 auto;
+ }
  .l-header {
   z-index:2000
  }
@@ -5681,7 +5685,7 @@ svg polygon {
   margin:9px 0
  }
  .c-mv-slide img {
-  height:41.52778vw
+  height:46vw
  }
  .c-mv-pagination {
   width:74.72222vw;
@@ -5997,10 +6001,10 @@ svg polygon {
   font-size:1.8rem
  }
  .l-side-categories-inner .appsItemCategoryTag_lowerchild {
-  margin-top:24px
+  margin-top:10px
  }
  .l-side-categories-inner .appsItemCategoryTag_lowerchild li+li {
-  margin-top:24px
+  margin-top:10px
  }
  .l-side-categories-inner .appsItemCategoryTag_lowerchild a {
   font-size:15px;
@@ -6046,8 +6050,8 @@ svg polygon {
   transform:translateY(15px)
  }
  .c-mv-slide img {
-  max-height:calc(60vh - 183px);
-  min-height:500px
+  max-height:calc(50vw * 0.5 - 183px);
+  min-height:23vw;
  }
  .c-mv-pagination .swiper-pagination-bullet {
   width:18px;
@@ -6799,7 +6803,7 @@ svg polygon {
   font-size:1.5rem
  }
  .p-blog {
-  padding-top:75px;
+  padding-top:10px;
   padding-bottom:160px
  }
  .p-blog .main #about.blogListMain {
@@ -6844,12 +6848,13 @@ svg polygon {
   font-size:4.2rem
  }
  .p-blog .main #about.blogDetail .blog_publish {
+  display:none;
   margin-top:27px;
   font-size:18px;
   font-size:1.8rem
  }
  .p-blog .main #about.blogDetail .blog_body {
-  margin-top:60px;
+  margin-top:30px;
   font-size:18px;
   font-size:1.8rem
  }
