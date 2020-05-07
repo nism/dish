@@ -521,8 +521,6 @@ hr {
 }
 body {
  width:80%;
- margin:0 auto;
- line-height:1;
 }
 ol,
 ul {
@@ -5549,6 +5547,10 @@ svg polygon {
  }
 }
 @media screen and (min-width:980px) {
+ body {
+  width:80%;
+  margin:0 auto;
+ }
  .l-header {
   z-index:2000
  }
