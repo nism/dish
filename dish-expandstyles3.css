@@ -1,0 +1,23 @@
+.l-nosidebar {
+  display:none;
+}
+
+@media screen and (min-width:768px) {
+  .l-main-nosidebar {
+    width:65vw;
+    margin:0 auto;
+  }
+}
+
+.canada-topimage {
+  margin:0 auto;
+}
+
+.canada-midimage {
+  margin:0 auto;
+  width:60vw;
+}
+
+.canada-botimage {
+  margin:0 auto;
+}
