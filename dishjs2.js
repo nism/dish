@@ -8308,7 +8308,7 @@
                                     slidesPerView: 1,
                                     spaceBetween: 0
                                 },
-                                960: {
+                                1400: {
                                     slidesPerView: 1.6,
                                     spaceBetween: 9
                                 }
