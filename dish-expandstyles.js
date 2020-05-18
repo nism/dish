@@ -23,6 +23,9 @@ $(function(){
     document.body.innerHTML = document.body.innerHTML.replace('[CANADABOTIMAGE]', '<div class="canada-botimage">');
     document.body.innerHTML = document.body.innerHTML.replace('[/CANADABOTIMAGE]', '</div>');
   }
+
+  document.getElementsByClassName("av-special-heading-tag")[0].parentNode.classList.add("h3div");
+  return
 });
 
 //document.body.innerHTML = document.body.innerHTML.replace('', '');

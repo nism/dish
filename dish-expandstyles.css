@@ -2,9 +2,11 @@
   display:none;
 }
 
-.l-main-nosidebar {
-  width:65vw;
-  margin:0 auto;
+@media screen and (min-width:768px) {
+  .l-main-nosidebar {
+    width:65vw;
+    margin:0 auto;
+  }
 }
 
 .canada-topimage {
@@ -13,8 +15,14 @@
 
 .canada-midimage {
   margin:0 auto;
+  width:40vw;
 }
 
 .canada-botimage {
   margin:0 auto;
+}
+
+h3div {
+  justify-content: center;
+  align-items: center;
 }
