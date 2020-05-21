@@ -3866,10 +3866,10 @@ svg polygon {
  .c-item-list::before,
  .c-item-list::after,
  .c-item-list a {
-  width:90vw;
+  width:46vw;
  }
  .c-card-thumbnail {
-  width:90vw;
+  width:46vw;
   height: auto;
 
   -o-object-fit: cover;
