@@ -29,7 +29,9 @@ $(function(){
   }
 
   if (window.location.href.indexOf("2020/05/06/143201" != -1)) {
-    dish-expandstyles.insertRule('blog-body div:first-of-type {height:0;visibility:none;}', 0);
+    var style = document.creatElement('style');
+    style.innerHTML = 'blog-body div:first-of-type {height:0;visibility:none;}';
+    document.head.appendChild(style);
   }
 });
 
