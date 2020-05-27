@@ -29,10 +29,12 @@ $(function(){
   }
 
   if (window.location.href.indexOf("2020/05/06/143201" != -1)) {
-    var style = document.creatElement('style');
-    style.innerHTML = 'blog-body div:first-of-type {height:0;visibility:none;}';
+    var style = document.createElement('style');
+    style.innerHTML = '.blog-body div:first-of-type {height:0;visibility:none;}';
     document.head.appendChild(style);
   }
+
+  return false;
 });
 
 //document.body.innerHTML = document.body.innerHTML.replace('', '');
