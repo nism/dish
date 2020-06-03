@@ -1,4 +1,4 @@
-$(function(){
+function(){
   if (document.body.innerHTML.includes('[NOSIDEBAR]')) {
     sidebarElement = document.getElementsByClassName("l-side");
     mainContainerElement = document.getElementsByClassName("l-main");
@@ -35,6 +35,6 @@ $(function(){
   }
 
   return false;
-});
+};
 
 //document.body.innerHTML = document.body.innerHTML.replace('', '');
