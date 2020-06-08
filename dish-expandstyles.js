@@ -1,4 +1,4 @@
-function(){
+//(function(){
   if (document.body.innerHTML.includes('[NOSIDEBAR]')) {
     sidebarElement = document.getElementsByClassName("l-side");
     mainContainerElement = document.getElementsByClassName("l-main");
@@ -6,22 +6,33 @@ function(){
     sidebarElement[0].classList.add("l-nosidebar");
     mainContainerElement[0].classList.add("l-main-nosidebar");
 
-    document.body.innerHTML = document.body.innerHTML.replace('[NOSIDEBAR]', '');
+    $("div:contains('[NOSIDEBAR]')").last()[0].innerHTML = $("div:contains('[NOSIDEBAR]')").last()[0].innerHTML.replace('[NOSIDEBAR]','');
+    
+    //document.body.innerHTML = document.body.innerHTML.replace('[NOSIDEBAR]', '');
   }
 
   if (document.body.innerHTML.includes('[CANADATOPIMAGE]')) {
-    document.body.innerHTML = document.body.innerHTML.replace('[CANADATOPIMAGE]', '<div class="canada-topimage">');
-    document.body.innerHTML = document.body.innerHTML.replace('[/CANADATOPIMAGE]', '</div>');
+    $("div:contains('[CANADATOPIMAGE]')").last()[0].innerHTML = $("div:contains('[CANADATOPIMAGE]')").last()[0].innerHTML.replace('[CANADATOPIMAGE]','<div class="canada-topimage">');
+    $("div:contains('[/CANADATOPIMAGE]')").last()[0].innerHTML = $("div:contains('[/CANADATOPIMAGE]')").last()[0].innerHTML.replace('[/CANADATOPIMAGE]','</div>');
+
+    //document.body.innerHTML = document.body.innerHTML.replace('[CANADATOPIMAGE]', '<div class="canada-topimage">');
+    //document.body.innerHTML = document.body.innerHTML.replace('[/CANADATOPIMAGE]', '</div>');
   }
 
   if (document.body.innerHTML.includes('[CANADAMIDIMAGE]')) {
-    document.body.innerHTML = document.body.innerHTML.replace('[CANADAMIDIMAGE]', '<div class="canada-midimage">');
-    document.body.innerHTML = document.body.innerHTML.replace('[/CANADAMIDIMAGE]', '</div>');
+    $("div:contains('[CANADAMIDIMAGE]')").last()[0].innerHTML = $("div:contains('[CANADAMIDIMAGE]')").last()[0].innerHTML.replace('[CANADAMIDIMAGE]','<div class="canada-midimage">');
+    $("div:contains('[/CANADAMIDIMAGE]')").last()[0].innerHTML = $("div:contains('[/CANADAMIDIMAGE]')").last()[0].innerHTML.replace('[/CANADAMIDIMAGE]','</div>');
+
+    //document.body.innerHTML = document.body.innerHTML.replace('[CANADAMIDIMAGE]', '<div class="canada-midimage">');
+    //document.body.innerHTML = document.body.innerHTML.replace('[/CANADAMIDIMAGE]', '</div>');
   }
 
   if (document.body.innerHTML.includes('[CANADABOTIMAGE]')) {
-    document.body.innerHTML = document.body.innerHTML.replace('[CANADABOTIMAGE]', '<div class="canada-botimage">');
-    document.body.innerHTML = document.body.innerHTML.replace('[/CANADABOTIMAGE]', '</div>');
+    $("div:contains('[CANADABOTIMAGE]')").last()[0].innerHTML = $("div:contains('[CANADABOTIMAGE]')").last()[0].innerHTML.replace('[CANADABOTIMAGE]','<div class="canada-botimage">');
+    $("div:contains('[/CANADABOTIMAGE]')").last()[0].innerHTML = $("div:contains('[/CANADABOTIMAGE]')").last()[0].innerHTML.replace('[/CANADABOTIMAGE]','</div>');
+
+    //document.body.innerHTML = document.body.innerHTML.replace('[CANADABOTIMAGE]', '<div class="canada-botimage">');
+    //document.body.innerHTML = document.body.innerHTML.replace('[/CANADABOTIMAGE]', '</div>');
   }
 
   if (document.getElementsByClassName("av-special-heading-tag")[0]) {
@@ -34,7 +45,7 @@ function(){
     document.head.appendChild(style);
   }
 
-  return false;
-};
+  //return false;
+//});
 
 //document.body.innerHTML = document.body.innerHTML.replace('', '');
